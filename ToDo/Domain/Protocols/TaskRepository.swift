@@ -10,4 +10,5 @@ import Foundation
 protocol TaskRepository {
     func add(task: Task)
     func getAll() -> [Task]
+    func delete(by id: UUID)
 }
