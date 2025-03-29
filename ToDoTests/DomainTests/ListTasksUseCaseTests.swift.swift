@@ -23,5 +23,7 @@ final class ListTasksUseCaseTests: XCTestCase {
         
         // Then
         XCTAssertEqual(tasks.count, 2)
+        XCTAssertEqual(tasks[0].title, "Tarefa 1")
+        XCTAssertEqual(tasks[1].title, "Tarefa 2")
     }
 }
