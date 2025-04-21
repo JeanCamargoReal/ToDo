@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Task: Equatable {
+struct Task: Equatable, Codable, Identifiable {
     let id: UUID
     let title: String
     var isDone: Bool

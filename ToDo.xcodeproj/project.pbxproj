@@ -25,6 +25,8 @@
 		C585DDDA2D9878F0008A3BA5 /* DeleteTaskUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C585DDD92D9878E9008A3BA5 /* DeleteTaskUseCase.swift */; };
 		C585DDDD2D9981A1008A3BA5 /* CreateTaskError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C585DDDC2D99819B008A3BA5 /* CreateTaskError.swift */; };
 		C585DDE22D998F1F008A3BA5 /* TaskTitleValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C585DDE12D998F14008A3BA5 /* TaskTitleValidator.swift */; };
+		C5B96B1C2DB6968000413B7B /* UserDefaultsTaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B96B1B2DB6967A00413B7B /* UserDefaultsTaskRepository.swift */; };
+		C5B96B1F2DB6998C00413B7B /* UserDefaultsTaskRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B96B1E2DB6997F00413B7B /* UserDefaultsTaskRepositoryTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		C585DDDB2D997DB0008A3BA5 /* TaskTitleValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTitleValidatorTests.swift; sourceTree = "<group>"; };
 		C585DDDC2D99819B008A3BA5 /* CreateTaskError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskError.swift; sourceTree = "<group>"; };
 		C585DDE12D998F14008A3BA5 /* TaskTitleValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTitleValidator.swift; sourceTree = "<group>"; };
+		C5B96B1B2DB6967A00413B7B /* UserDefaultsTaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsTaskRepository.swift; sourceTree = "<group>"; };
+		C5B96B1E2DB6997F00413B7B /* UserDefaultsTaskRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsTaskRepositoryTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		C5113A562D9704A0003376AB /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				C5B96B1B2DB6967A00413B7B /* UserDefaultsTaskRepository.swift */,
 				C5113A552D9704A0003376AB /* InMemoryTaskRepository.swift */,
 			);
 			path = Repositories;
@@ -211,6 +216,7 @@
 		C5113A762D9704A4003376AB /* ToDoTests */ = {
 			isa = PBXGroup;
 			children = (
+				C5B96B1D2DB6990700413B7B /* DataTests */,
 				C5113A742D9704A4003376AB /* DomainTests */,
 			);
 			path = ToDoTests;
@@ -222,6 +228,14 @@
 				C585DDE12D998F14008A3BA5 /* TaskTitleValidator.swift */,
 			);
 			path = Validators;
+			sourceTree = "<group>";
+		};
+		C5B96B1D2DB6990700413B7B /* DataTests */ = {
+			isa = PBXGroup;
+			children = (
+				C5B96B1E2DB6997F00413B7B /* UserDefaultsTaskRepositoryTests.swift */,
+			);
+			path = DataTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,7 +288,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1620;
-				LastUpgradeCheck = 1620;
+				LastUpgradeCheck = 1630;
 				TargetAttributes = {
 					C51139D52D96D40B003376AB = {
 						CreatedOnToolsVersion = 16.2;
@@ -339,6 +353,7 @@
 				C585DDDA2D9878F0008A3BA5 /* DeleteTaskUseCase.swift in Sources */,
 				C585DDDD2D9981A1008A3BA5 /* CreateTaskError.swift in Sources */,
 				C5113A702D9704A0003376AB /* ContentView.swift in Sources */,
+				C5B96B1C2DB6968000413B7B /* UserDefaultsTaskRepository.swift in Sources */,
 				C5113A712D9704A0003376AB /* ToDoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,6 +365,7 @@
 				C53416E92D99919D000B60F1 /* TaskTitleValidatorTests.swift in Sources */,
 				C585DDD42D971FF3008A3BA5 /* ToggleTaskUseCaseTests.swift in Sources */,
 				C585DDD82D986F2C008A3BA5 /* DeleteTaskUseCaseTests.swift in Sources */,
+				C5B96B1F2DB6998C00413B7B /* UserDefaultsTaskRepositoryTests.swift in Sources */,
 				C5113A772D9704A4003376AB /* CreateTaskUseCaseTests.swift in Sources */,
 				C5113A782D9704A4003376AB /* ListTasksUseCaseTests.swift.swift in Sources */,
 			);
@@ -401,6 +417,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = KA74A9Q966;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -464,6 +481,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = KA74A9Q966;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -493,7 +511,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ToDo/Preview Content\"";
-				DEVELOPMENT_TEAM = KA74A9Q966;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -522,7 +539,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ToDo/Preview Content\"";
-				DEVELOPMENT_TEAM = KA74A9Q966;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -549,7 +565,6 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KA74A9Q966;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jeancamargoreal.ToDoTests;
@@ -567,7 +582,6 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KA74A9Q966;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jeancamargoreal.ToDoTests;
