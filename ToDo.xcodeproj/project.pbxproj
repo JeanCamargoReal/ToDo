@@ -27,6 +27,9 @@
 		C585DDE22D998F1F008A3BA5 /* TaskTitleValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C585DDE12D998F14008A3BA5 /* TaskTitleValidator.swift */; };
 		C5B96B1C2DB6968000413B7B /* UserDefaultsTaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B96B1B2DB6967A00413B7B /* UserDefaultsTaskRepository.swift */; };
 		C5B96B1F2DB6998C00413B7B /* UserDefaultsTaskRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B96B1E2DB6997F00413B7B /* UserDefaultsTaskRepositoryTests.swift */; };
+		C5B96B212DB69DA400413B7B /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B96B202DB69D9900413B7B /* TaskListViewModel.swift */; };
+		C5B96B242DB81AA100413B7B /* TaskListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B96B232DB81A9200413B7B /* TaskListViewModelTests.swift */; };
+		C5E24FC52DBAADE900349EAE /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E24FC42DBAADE700349EAE /* TaskListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		C585DDE12D998F14008A3BA5 /* TaskTitleValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTitleValidator.swift; sourceTree = "<group>"; };
 		C5B96B1B2DB6967A00413B7B /* UserDefaultsTaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsTaskRepository.swift; sourceTree = "<group>"; };
 		C5B96B1E2DB6997F00413B7B /* UserDefaultsTaskRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsTaskRepositoryTests.swift; sourceTree = "<group>"; };
+		C5B96B202DB69D9900413B7B /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
+		C5B96B232DB81A9200413B7B /* TaskListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModelTests.swift; sourceTree = "<group>"; };
+		C5E24FC42DBAADE700349EAE /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +165,7 @@
 		C5113A602D9704A0003376AB /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				C5B96B202DB69D9900413B7B /* TaskListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -166,6 +173,7 @@
 		C5113A612D9704A0003376AB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C5E24FC42DBAADE700349EAE /* TaskListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -216,6 +224,7 @@
 		C5113A762D9704A4003376AB /* ToDoTests */ = {
 			isa = PBXGroup;
 			children = (
+				C5B96B222DB81A7C00413B7B /* PresentationTests */,
 				C5B96B1D2DB6990700413B7B /* DataTests */,
 				C5113A742D9704A4003376AB /* DomainTests */,
 			);
@@ -236,6 +245,14 @@
 				C5B96B1E2DB6997F00413B7B /* UserDefaultsTaskRepositoryTests.swift */,
 			);
 			path = DataTests;
+			sourceTree = "<group>";
+		};
+		C5B96B222DB81A7C00413B7B /* PresentationTests */ = {
+			isa = PBXGroup;
+			children = (
+				C5B96B232DB81A9200413B7B /* TaskListViewModelTests.swift */,
+			);
+			path = PresentationTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,6 +366,8 @@
 				C5113A6C2D9704A0003376AB /* Task.swift in Sources */,
 				C5113A6D2D9704A0003376AB /* TaskRepository.swift in Sources */,
 				C5113A6E2D9704A0003376AB /* CreateTaskUseCase.swift in Sources */,
+				C5B96B212DB69DA400413B7B /* TaskListViewModel.swift in Sources */,
+				C5E24FC52DBAADE900349EAE /* TaskListView.swift in Sources */,
 				C5113A6F2D9704A0003376AB /* ListTasksUseCase.swift in Sources */,
 				C585DDDA2D9878F0008A3BA5 /* DeleteTaskUseCase.swift in Sources */,
 				C585DDDD2D9981A1008A3BA5 /* CreateTaskError.swift in Sources */,
@@ -365,6 +384,7 @@
 				C53416E92D99919D000B60F1 /* TaskTitleValidatorTests.swift in Sources */,
 				C585DDD42D971FF3008A3BA5 /* ToggleTaskUseCaseTests.swift in Sources */,
 				C585DDD82D986F2C008A3BA5 /* DeleteTaskUseCaseTests.swift in Sources */,
+				C5B96B242DB81AA100413B7B /* TaskListViewModelTests.swift in Sources */,
 				C5B96B1F2DB6998C00413B7B /* UserDefaultsTaskRepositoryTests.swift in Sources */,
 				C5113A772D9704A4003376AB /* CreateTaskUseCaseTests.swift in Sources */,
 				C5113A782D9704A4003376AB /* ListTasksUseCaseTests.swift.swift in Sources */,
