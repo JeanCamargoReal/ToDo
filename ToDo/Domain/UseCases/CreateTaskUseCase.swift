@@ -9,12 +9,13 @@ import Foundation
 
 struct CreateTaskUseCase {
     func execute(title: String) -> Result<Task, CreateTaskError> {
-        if let error = TaskTitleValidator.validate(title) {
+        let trimmed = title.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        if let error = TaskTitleValidator.validate(trimmed) {
             return .failure(error)
         }
+        
+        return .success(Task(id: UUID(), title: trimmed, isDone: false))
 
-        let trimmed = title.trimmingCharacters(in: .whitespacesAndNewlines)
-        let task = Task(id: UUID(), title: trimmed, isDone: false)
-        return .success(task)
     }
 }

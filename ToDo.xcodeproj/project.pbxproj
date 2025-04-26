@@ -68,6 +68,7 @@
 		C5B96B202DB69D9900413B7B /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
 		C5B96B232DB81A9200413B7B /* TaskListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModelTests.swift; sourceTree = "<group>"; };
 		C5E24FC42DBAADE700349EAE /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
+		C5E24FC62DBD61F400349EAE /* ToDo.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = ToDo.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +92,7 @@
 		C51139CD2D96D40B003376AB = {
 			isa = PBXGroup;
 			children = (
+				C5E24FC62DBD61F400349EAE /* ToDo.xctestplan */,
 				C5113A682D9704A0003376AB /* ToDo */,
 				C5113A762D9704A4003376AB /* ToDoTests */,
 				C51139D72D96D40B003376AB /* Products */,

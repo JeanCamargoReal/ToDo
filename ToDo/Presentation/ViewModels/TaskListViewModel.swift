@@ -35,13 +35,13 @@ final class TaskListViewModel: ObservableObject {
     }
     
     func addTask(title: String) {
-            switch createTask.execute(title: title) {
-            case .success(let task):
-                tasks.append(task)
-            case .failure(let error):
-                errorMessage = error.message
-            }
+        switch createTask.execute(title: title) {
+        case .success(let task):
+            tasks.append(task)
+        case .failure(let error):
+            handleError(error)
         }
+    }
     
     func deleteTask(withId id: UUID) {
         deleteTask.execute(id: id)
@@ -52,5 +52,9 @@ final class TaskListViewModel: ObservableObject {
         guard let index = tasks.firstIndex(where: { $0.id == id }) else { return }
         let toggled = toggleTask.execute(task: tasks[index])
         tasks[index] = toggled
+    }
+    
+    private func handleError(_ error: CreateTaskError) {
+        errorMessage = error.message
     }
 }
